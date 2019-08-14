@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * MarKor NET
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Open Software License (OSL 3.0)
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/osl-3.0.php
+ *
+ * @category   MarKorNET
+ * @package    MarKor_Changeprice
+ * @author     Marcin Korzystka  <support@markornet.com>
+ * @copyright  Copyright (c) MarKor NET (http://www.markornet.com)
+ * @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ */
+-->
+<layout version="0.0.1">
+    <!--
+    Default layout
+    -->
+    <default>
+        <reference name="head">
+            <action method="addJs">
+                <script>markor/changeprice/changeprice.js</script>
+                <sort_order>997</sort_order>
+            </action>
+            <action method="addCss">
+                <stylesheet>css/markor/changeprice/main.css</stylesheet>
+                <sort_order>997</sort_order>
+            </action>
+        </reference>
+	    <reference name="left">            
+            <block type="core/template" name="changepriceLeft">
+            	<action method="setTemplate" ifconfig="changeprice/SAMPLE/leftmode"><template>markor/changeprice/left.phtml</template></action>
+            </block>
+        </reference>
+        <reference name="right">            
+            <block type="core/template" name="changepriceRight">
+            	<action method="setTemplate" ifconfig="changeprice/SAMPLE/rightmode"><template>markor/changeprice/left.phtml</template></action>
+            </block>
+        </reference>
+        <reference name="footer">            
+            <block type="core/template" name="changeprice">
+            	<action method="setTemplate" ifconfig="changeprice/SAMPLE/footermode"><template>markor/changeprice/left.phtml</template></action>
+            </block>
+        </reference>
+    </default>
+</layout>

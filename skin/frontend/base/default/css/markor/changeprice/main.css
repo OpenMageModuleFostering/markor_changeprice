@@ -1,0 +1,3 @@
+.product-view .product-shop .price-box span.price-excluding-tax, .price-box .price-excluding-tax {display:none;}
+#pbrutto, #pnetto {cursor: pointer; margin: 0 5px;}
+#pnetto {text-decoration: line-through;}

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package>
+    <name>MarKor_Changeprice</name>
+    <version>1.0.0</version>
+    <stability>stable</stability>
+    <license uri="http://opensource.org/licenses/osl-3.0.php">Open Software License (OSL)</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Module to change price on frontend.</summary>
+    <description>Your products have price include tax?&#xD;
+&#xD;
+This module allow you change product's price for all catalog. You can change between 'exclude tax' and 'include tax'.</description>
+    <notes>- Configurable three places to display module.&#xD;
+</notes>
+    <authors><author><name>MarKor NET</name><user>markornet</user><email>biuro@markornet.com</email></author></authors>
+    <date>2015-02-19</date>
+    <time>12:54:31</time>
+    <contents><target name="magecommunity"><dir name="MarKor"><dir name="Changeprice"><dir name="Helper"><file name="Data.php" hash="af788d63886a63cccfe7ab11d743a502"/></dir><dir name="etc"><file name="adminhtml.xml" hash="053f715d9cb32f6a1a1bf2aaf8bb8b69"/><file name="config.xml" hash="01bedcd7cff18149e8328c1722338362"/><file name="system.xml" hash="2f49c83cbfbbb8c004486a1747104143"/></dir></dir></dir></target><target name="magedesign"><dir name="frontend"><dir name="base"><dir name="default"><dir name="layout"><dir name="markor"><file name="changeprice.xml" hash="f7312cc3c2a18021028a3d811d3a34f0"/></dir></dir><dir name="template"><dir name="markor"><dir name="changeprice"><file name="left.phtml" hash="41f2ad20f688f3ce64ce5a1478b72325"/></dir></dir></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="MarKor_Changeprice.xml" hash="85adadb53667c20a3e0123582e3981e5"/></dir></target><target name="mageskin"><dir name="frontend"><dir name="base"><dir name="default"><dir name="css"><dir name="markor"><dir name="changeprice"><file name="main.css" hash="1f6584ad20d49b0f3b454cf950b554bd"/></dir></dir></dir></dir></dir></dir></target><target name="mageweb"><dir name="js"><dir name="markor"><dir name="changeprice"><file name="changeprice.js" hash="4b9d7711d9b4e0c783f7214a304fc2d1"/><file name="jquery.cookie.js" hash="d5528dde0006c78be04817327c2f9b6f"/></dir></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.1.0</min><max>6.0.0</max></php></required></dependencies>
+</package>

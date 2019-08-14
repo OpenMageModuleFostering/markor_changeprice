@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/MarKor_Changeprice",
+    "type": "magento-module",
+    "license": "Open-Software-License-(OSL)",
+    "homepage": "",
+    "description": "Module to change price on frontend.",
+    "authors": [
+    {
+        "name": "MarKor NET",
+        "email": "biuro@markornet.com"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}

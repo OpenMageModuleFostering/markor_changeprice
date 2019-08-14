@@ -1,0 +1,41 @@
+<?php
+/**
+ * MarKor NET
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Open Software License (OSL 3.0)
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/osl-3.0.php
+ *
+ * @category   MarKorNET
+ * @package    MarKor_Changeprice
+ * @author     Marcin Korzystka  <support@markornet.com>
+ * @copyright  Copyright (c) MarKor NET (http://www.markornet.com)
+ * @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ */
+?>
+<div class="block changeprice">
+<div class="block-title"><strong><span><?php echo $this->__('Catalog Price Scope'); ?></span></strong></div>
+<div class="block-content">
+<p><?php echo $this->__('Price Type'); ?></p>
+<span id="pbrutto"><?php echo $this->helper('tax')->__('Incl. Tax:'); ?></span>/<span id="pnetto"><?php echo $this->helper('tax')->__('Excl. Tax:'); ?></span>
+</div>
+</div>
+<script>
+$j("#pnetto").click(function() {
+    $j("span.price-including-tax").css("display","none");
+    $j("span.price-excluding-tax").css("display","block");
+    Mage.Cookies.set('DisplayNet',1);
+    $j(this).css("text-decoration","none");
+    $j("#pbrutto").css("text-decoration","line-through");
+});
+$j("#pbrutto").click(function() {
+    $j("span.price-including-tax").css("display","block");
+    $j("span.price-excluding-tax").css("display","none");
+    Mage.Cookies.set('DisplayNet',0);
+    $j(this).css("text-decoration","none");
+    $j("#pnetto").css("text-decoration","line-through");
+});
+</script>
