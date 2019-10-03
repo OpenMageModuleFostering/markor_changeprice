@@ -1,7 +1,7 @@
 {
-    "name": "OpenMageModuleFostering\/MarKor_Changeprice",
+    "name": "openmage-module-fostering\/markor_changeprice",
     "type": "magento-module",
-    "license": "Open-Software-License-(OSL)",
+    "license": "OSL-3.0",
     "homepage": "",
     "description": "Module to change price on frontend.",
     "authors": [
